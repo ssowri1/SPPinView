@@ -4,7 +4,7 @@
 
 SPPinView extensively use for pin view or passcode view or OTP view.
 
-![Screenshot]
+![Screenshot](https://github.com/ssowri1/SPPinView/blob/master/SPPinView/ezgif.com-video-to-gif.gif?raw=true)
 
 **INSTALLATION** 
 
