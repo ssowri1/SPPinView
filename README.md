@@ -13,7 +13,7 @@ SPPinView extensively use for pin view or passcode view or OTP view.
 - Chill! That's it.
 - Additionally, You can change the properties like below
 
-        //**** REQUIRED ****//
+        //**** OPTIONAL ****//
         //**** 
         //**** Constraint to pinview charecter counts.
         pinView.pinCount = 4
