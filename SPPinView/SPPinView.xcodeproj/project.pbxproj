@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3F91D622A6891B00C41B70 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F91D522A6891B00C41B70 /* SPView.swift */; };
 		CE85A1ED2224385900B5DA37 /* SPKeyBoardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85A1EC2224385900B5DA37 /* SPKeyBoardAvoiding.swift */; };
 		CEAA3B06221FE3550021271B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA3B05221FE3550021271B /* AppDelegate.swift */; };
 		CEAA3B08221FE3550021271B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA3B07221FE3550021271B /* ViewController.swift */; };
@@ -14,10 +15,11 @@
 		CEAA3B0D221FE3570021271B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAA3B0C221FE3570021271B /* Assets.xcassets */; };
 		CEAA3B10221FE3570021271B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAA3B0E221FE3570021271B /* LaunchScreen.storyboard */; };
 		CEAA3B18221FE5660021271B /* SPPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA3B17221FE5660021271B /* SPPinView.swift */; };
-		CEBF8838224BB77A001FC1B4 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF8837224BB77A001FC1B4 /* SPView.swift */; };
+		CEBF8838224BB77A001FC1B4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF8837224BB77A001FC1B4 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3F91D522A6891B00C41B70 /* SPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPView.swift; sourceTree = "<group>"; };
 		CE85A1EC2224385900B5DA37 /* SPKeyBoardAvoiding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPKeyBoardAvoiding.swift; sourceTree = "<group>"; };
 		CEAA3B02221FE3550021271B /* SPPinView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPPinView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA3B05221FE3550021271B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 		CEAA3B0F221FE3570021271B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAA3B11221FE3570021271B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAA3B17221FE5660021271B /* SPPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPinView.swift; sourceTree = "<group>"; };
-		CEBF8837224BB77A001FC1B4 /* SPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPView.swift; sourceTree = "<group>"; };
+		CEBF8837224BB77A001FC1B4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3F91D322A688C200C41B70 /* PinView */ = {
+			isa = PBXGroup;
+			children = (
+				CEBF883A224BB7EE001FC1B4 /* Model */,
+				CEBF883F224BB82B001FC1B4 /* View */,
+				CEBF883B224BB7F9001FC1B4 /* Controller */,
+			);
+			path = PinView;
+			sourceTree = "<group>";
+		};
+		CE3F91D422A6890800C41B70 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F91D522A6891B00C41B70 /* SPView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		CE3F91D722A6896100C41B70 /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				CEBF8837224BB77A001FC1B4 /* GradientView.swift */,
+			);
+			path = GradientView;
+			sourceTree = "<group>";
+		};
 		CEAA3AF9221FE3550021271B = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				CEBF883C224BB804001FC1B4 /* ApplicationDelegate */,
-				CEBF883A224BB7EE001FC1B4 /* Model */,
-				CEBF883F224BB82B001FC1B4 /* View */,
-				CEBF883B224BB7F9001FC1B4 /* Controller */,
+				CE3F91D322A688C200C41B70 /* PinView */,
 				CEBF8839224BB7E7001FC1B4 /* Helper */,
-				CEBF883D224BB810001FC1B4 /* ThirdParty */,
 				CEAA3B0C221FE3570021271B /* Assets.xcassets */,
 				CEAA3B0E221FE3570021271B /* LaunchScreen.storyboard */,
 				CEAA3B11221FE3570021271B /* Info.plist */,
@@ -76,7 +101,9 @@
 		CEBF8839224BB7E7001FC1B4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				CEBF8837224BB77A001FC1B4 /* SPView.swift */,
+				CE3F91D422A6890800C41B70 /* UIView */,
+				CEBF883E224BB824001FC1B4 /* SPKeyBoardAvoiding */,
+				CE3F91D722A6896100C41B70 /* GradientView */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -103,14 +130,6 @@
 				CEAA3B05221FE3550021271B /* AppDelegate.swift */,
 			);
 			path = ApplicationDelegate;
-			sourceTree = "<group>";
-		};
-		CEBF883D224BB810001FC1B4 /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-				CEBF883E224BB824001FC1B4 /* SPKeyBoardAvoiding */,
-			);
-			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 		CEBF883E224BB824001FC1B4 /* SPKeyBoardAvoiding */ = {
@@ -204,7 +223,8 @@
 				CEAA3B18221FE5660021271B /* SPPinView.swift in Sources */,
 				CEAA3B08221FE3550021271B /* ViewController.swift in Sources */,
 				CEAA3B06221FE3550021271B /* AppDelegate.swift in Sources */,
-				CEBF8838224BB77A001FC1B4 /* SPView.swift in Sources */,
+				CEBF8838224BB77A001FC1B4 /* GradientView.swift in Sources */,
+				CE3F91D622A6891B00C41B70 /* SPView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,14 +370,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VMAQSBA5;
 				INFOPLIST_FILE = SPPinView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssowri1.SPPinView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daimler.daimlerbustest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -369,14 +390,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9VMAQSBA5;
 				INFOPLIST_FILE = SPPinView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssowri1.SPPinView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daimler.daimlerbustest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
